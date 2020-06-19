@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ReproducibleLibrary",
+        "repositoryURL": "https://github.com/schadEigentlich/ios-reproducible-library",
+        "state": {
+          "branch": "master",
+          "revision": "13ccc4367c6d781352cf9f19209a5edccc3d18e4",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

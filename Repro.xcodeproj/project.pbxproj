@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		838DF0EB249D11620044B171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 838DF0E9249D11620044B171 /* LaunchScreen.storyboard */; };
 		838DF0F6249D11620044B171 /* ReproTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DF0F5249D11620044B171 /* ReproTests.swift */; };
 		838DF101249D11620044B171 /* ReproUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838DF100249D11620044B171 /* ReproUITests.swift */; };
+		838DF110249D11B10044B171 /* ReproducibleLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 838DF10F249D11B10044B171 /* ReproducibleLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				838DF110249D11B10044B171 /* ReproducibleLibrary in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +154,9 @@
 			dependencies = (
 			);
 			name = Repro;
+			packageProductDependencies = (
+				838DF10F249D11B10044B171 /* ReproducibleLibrary */,
+			);
 			productName = Repro;
 			productReference = 838DF0DB249D11600044B171 /* Repro.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 838DF0D2249D11600044B171;
+			packageReferences = (
+				838DF10E249D11B10044B171 /* XCRemoteSwiftPackageReference "ios-reproducible-library" */,
+			);
 			productRefGroup = 838DF0DC249D11600044B171 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -350,6 +358,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -410,6 +419,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -594,6 +604,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		838DF10E249D11B10044B171 /* XCRemoteSwiftPackageReference "ios-reproducible-library" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/schadEigentlich/ios-reproducible-library";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		838DF10F249D11B10044B171 /* ReproducibleLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 838DF10E249D11B10044B171 /* XCRemoteSwiftPackageReference "ios-reproducible-library" */;
+			productName = ReproducibleLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 838DF0D3249D11600044B171 /* Project object */;
 }

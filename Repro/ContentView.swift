@@ -7,10 +7,11 @@
 //
 
 import SwiftUI
+import ReproducibleLibrary
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        Text(hello(message: "World"))
     }
 }
 
